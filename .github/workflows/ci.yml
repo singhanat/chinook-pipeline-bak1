@@ -32,4 +32,4 @@ jobs:
             databricks workspace import "pipeline_test.conf" "/Users/singhanat.rer@kmutt.ac.th/test/pipeline.conf" --language python --overwrite
       - name: Deploy config to databricks workspace
         run: |
-            databricks jobs run-now 245821013745321
+            databricks jobs run-now --job-id 245821013745321
