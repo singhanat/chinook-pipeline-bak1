@@ -23,4 +23,4 @@ jobs:
             EOF
       - name: Deploy code to databricks workspace
         run: |
-            databricks workspace import pipeline.py /Users/singhanat.rer@kmutt.ac.th/prod/pipeline.py --language python --overwrite
+            databricks workspace import "pipeline.py" "/Users/singhanat.rer@kmutt.ac.th/prod/pipeline.py" --language python --overwrite
